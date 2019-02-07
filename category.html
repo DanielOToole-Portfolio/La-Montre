@@ -1,0 +1,199 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>960 grid 1</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/text.css">
+		<link rel = "stylesheet" href = "css/960.css">
+		<link rel = "stylesheet" href = "css/admin.css">
+	</head>
+	<body>
+		<div class="nav_bg"></div>
+		<div id="container" class = "container_12">
+			<nav class="grid_12 alpha">
+			
+			<div id="head" class="grid_12">
+				<div id ="header1" class="grid_3 alpha">
+						<h1>La M<span>o</span>ntre</h1>
+					</div>
+				
+				<div class="nav_list grid_9 omega">
+					
+				<ul>
+						<li><a class="norm" href="product.html">Products</a></li>
+						<li><a class="norm" href="category.html">Categories</a></li>
+						<li><a class="norm" href="shopdetails.html">Shop Details</a></li>
+						<li><a class="norm"  href="home.html">Logout</a>
+							
+						
+						</li>
+						
+					</ul>
+				</div>
+				</div>
+			</nav>
+			
+			
+			<div id="clear"></div>
+			
+			<div id="tabs" class="grid_10 prefix_1 prefix_1">
+			
+			<h1 align="center">Category Database</h1>
+			
+			<div class="tabs">
+				
+				  
+				   <input type="radio" name="tabs" id="tab1" checked >
+				   <label for="tab1">
+					   <i class="fa fa-html5"></i><span>Add Category</span>
+				   </label>
+				 
+				  
+				   <input type="radio" name="tabs" id="tab2">
+				   <label for="tab2">
+					   <i class="fa fa-css3"></i><span>Update Category</span>
+				   </label>
+				 
+				   
+				   <input type="radio" name="tabs" id="tab3">
+				   <label for="tab3">
+					   <i class="fa fa-code"></i><span>Delete Category</span>
+				   </label>
+				 
+				   <div id="tab-content1" class="tab-content">
+					  <h3></h3>
+					  <p> <p><form action="category.html" method="get">
+					  <div id="nam">Category name: <input type="text" name="pname"></div><br><br>
+					  <div id="id">Category ID: <input type="text" name="id"></div><br><br>
+					  Category Description: <input type="text" name="lname"><br><br>
+
+					  <input type="submit" value="Add Category" onclick="sure1(this.form)">
+					  <script language="javascript">
+				function sure1(form){
+               var retVal = confirm("Are you sure? This Category will be Added");
+               if( retVal == true ){
+                  document.write ("Category Deleted");
+                  return true;
+               }
+               else{
+                  document.write ("Category not Deleted");
+                  return false;
+               }
+            }
+			</script>
+					</p>
+				   </div>
+				   
+				   <div id="tab-content2" class="tab-content">
+					  <h3></h3>
+					  <p>
+					  Search Category ID: <input type="text" name="search"/><input type="submit" value="Search"><br><br>
+					   <p><form action="product.html" method="get">
+					  <div id="nam">Category name: <input type="text" name="pname"></div><br><br>
+					  <div id="id">Category ID: <input type="text" name="id"></div><br><br>
+					  Category Description: <input type="text" name="lname"><br><br>
+
+					  <input type="submit" value="Update Category" onclick="sure3(this.form)">
+					  </p>
+				   </div> 
+				   <script language="javascript">
+				function sure3(form){
+               var retVal = confirm("Are you sure? This will be Updated");
+               if( retVal == true ){
+                  document.write ("Category Updated");
+                  return true;
+               }
+               else{
+                  document.write ("Category not Updated");
+                  return false;
+               }
+            }
+			</script>
+				   
+				   <div id="tab-content3" class="tab-content">
+					  <h3></h3>
+					  <p>
+						Search Category: <input type="text" name="search"/><input type="submit" value="Search"/><br><br>
+						Categories<form name="form">
+					<select name="Products" id="Products">
+					<option value="Products">------- Category -------</option>
+					<option value="">Mens</option>
+					<option value="">Womens</option>
+					</select><br><br><br>
+					
+					<input type="submit" value="Delete Category" onclick="sure(this.form)"/>
+					<script language="javascript">
+				function sure(form){
+               var retVal = confirm("Are you sure? This will be permentally deleted");
+               if( retVal == true ){
+                  document.write ("Category Deleted");
+                  return true;
+               }
+               else{
+                  document.write ("Category not Deleted");
+                  return false;
+               }
+            }
+			</script>
+						
+					  </p>
+				   </div> 
+				</div>
+			
+				
+				</div>
+						
+			</div>
+			
+            <div id="clear"></div>
+            
+           <div class="footer_bg">
+		   <div class="container_12">
+		   
+            <div id="footertop"class="footer grid_8 prefix_2 suffix_2 alpha omega"> 
+                    <ul>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+                        <li><a class="norm" href="home.html"><span>La Montre</span></a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>				
+					</ul>
+            </div>
+			
+			
+            
+			<div id="footerbottom" class="grid_12 alpha">
+			
+			<div id="copyright" class="grid_8 suffix_1 alpha">
+				<p>La Montre is a trademark of Daniel O'Toole.
+				All other names and logos used on this website are the trademarks of their respective owners,
+				and their use or appearance on this website does not constitute any affiliation, 
+				endorsement or support. Copyright © 2015, Daniel O'Toole. Terms & Conditions.
+				PRIVACY POLICY
+			</div>
+			
+			
+			<div id="media" class="grid_2 prefix_1 omega">
+			
+				<img src="Images/Media/f1.png" style="width:40px; height:40px;">
+				<img src="Images/Media/t.png" style="width:40px; height:40px;">
+				<img src="Images/Media/g.png" style="width:40px; height:40px;">
+
+			
+			</div>
+			
+			</div>
+				
+			
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

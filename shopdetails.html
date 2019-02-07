@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>watch</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/text.css">
+		<link rel = "stylesheet" href = "css/960.css">
+		<link rel = "stylesheet" href = "css/admin.css">
+	</head>
+	<body>
+		<div class="nav_bg"></div>
+		<div class = "container_12">
+			<nav class="grid_12 alpha">
+			
+				<div id="head" class="grid_12">
+				<div id ="header1" class="grid_3 alpha">
+						<h1>La M<span>o</span>ntre</h1>
+					</div>
+				
+				<div class="nav_list grid_9 omega">
+					
+					<ul>
+						<li><a class="norm" href="product.html">Products</a></li>
+						<li><a class="norm" href="category.html">Categories</a></li>
+						<li><a class="norm" href="shopdetails.html">Shop Details</a></li>
+						<li><a id="norm" class="norm" href="home.html">Logout</a>
+							
+						
+						</li>
+						
+					</ul>
+				</div>
+				</div>
+			</nav>
+			
+			
+			
+	
+			<div id="clear"></div>
+			
+			<div id="shop" class="grid_12">
+			
+				
+			
+				<h1 align="center">Shop Database</h1>
+				
+				
+				<div id="page">
+				<div id="nav" class="grid_8 prefix_2 suffix_2 alpha">
+				
+					<div class="grid_2" id="flip">Leinster</div>
+							<div class="grid_2" id="flip">Ulster</div>
+							<div class="grid_2" id="flip">Munster</div>
+							<div class="grid_2" id="flip">Connacht</div>					
+						<div id="panel">
+							<div id="flip1" class="dub" style="margin-top:1px;"><a>Dublin</a></div>
+							<div id="flip2">Wicklow</div>
+							
+							
+						</div>	
+						
+							
+							
+							
+						</div>
+						
+						<div id="table1" style="margin-top:10px;" class="grid_8  prefix_2 suffix_2">
+					<table style="width:600px; margin-top:30px;">
+						<h2>Shop Details</h2>
+					  <tr>
+						<th>Shop ID</th>
+						<th>Shop Address</th>
+						<th>Shop Number</th>
+						<th>Opening-Hours</th>
+						<th>Shop Manager</th>
+						
+						
+					  </tr>
+					  <tr>
+						<td>001</td>
+						<td> Ballyogan Rd,<br>Blackrock,<br> Dublin</td>
+						<td>01 298 4576</td>
+						<td>9am - 6pm</td>
+						<td>Walter White</td>
+						
+						
+					  </tr>
+					   <tr>
+						<td>002</td>
+						<td> St Andrew Lane,<br>Temple Bar,<br> Dublin</td>
+						<td>01 260 1526</td>
+						<td>9am - 6pm</td>
+						<td>Steve Rogers</td>
+						
+						
+					  </tr>
+					   <tr>
+						<td>003</td>
+						<td> Ballinteer Rd,<br> Dundrum,<br> Dublin</td>
+						<td>01 280 9464</td>
+						<td>9am - 6pm</td>
+						<td>Bruce Wayne</td>
+					
+						
+					  </tr>
+					  </table>
+					
+				</div>
+				
+				<div id="table2" style="margin-top:10px;" class="grid_8  prefix_2 suffix_2 omega">
+					<table style="width:600px; margin-top:30px;">
+					<h2>Shop Details</h2>
+					 <tr>
+						<th>Shop ID</th>
+						<th>Shop Address</th>
+						<th>Shop Number</th>
+						<th>Opening-Hours</th>
+						<th>Shop Manager</th>
+						
+						
+					  </tr>
+					
+					  <tr>
+						<td>004</td>
+						<td> Church Rd,<br> Greystones,<br> Wicklow</td>
+						<td>01 287 0167</td>
+						<td>9am - 6pm</td>
+						<td>Charles Xiavar</td>
+						
+						
+					  </tr>
+					   <tr>
+						<td>005</td>
+						<td> 6-70 Main St,<br> Bray,<br> Wicklow</td>
+						<td>01 298 0987</td>
+						<td>9am - 6pm</td>
+						<td>Reed Richards</td>
+						
+				
+					  </tr>
+
+					  </table>
+					
+				</div>
+						
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+						<script> 
+						$(document).ready(function(){
+							$("#flip").click(function(){
+								$("#panel").slideToggle("slow");
+							});
+						});
+						
+						$(document).ready(function(){
+							$("#flip1").click(function(){
+								$("#table1").slideToggle("slow");
+								$("#table2").hide();
+							});
+						});
+						
+						$(document).ready(function(){
+							$("#flip2").click(function(){
+								$("#table2").slideToggle("slow");
+								$("#table1").hide();
+							});
+						});
+						</script>			
+			
+				</div>
+			</div>
+			
+			
+			
+			<div id="map" class="grid_8 prefix_2 suffix_2 omega" style="width: 620px; height: 440px;"></div>
+			   <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+			  <script>
+				// Define your locations: HTML content for the info window, latitude, longitude
+				var locations = [
+				  ['<h2>La Montre</h2><h5>Ballyogan Rd, Blackrock, Dublin</h5><h5>Opening-Hours:<br> 9am - 6pm</h5>', 53.2602149, -6.2047205],
+				  ['<h2>La Montre</h2><h5>St Andrew Lane, Temple Bar, Dublin</h5><h5>Opening-Hours:<br> 9am - 6pm</h5>', 53.34373667284635, -6.262335777282715],
+				  ['<h2>La Montre</h2><h5>Ballinteer Rd, Dundrum, Dublin</h5><h5>Opening-Hours:<br> 9am - 6pm</h5>', 53.28733317440473, -6.246392726898193],
+				  ['<h2>La Montre</h2><h5>Church Rd, Greystones, Wicklow</h5><h5>Opening-Hours:<br> 9am - 6pm</h5>', 53.146294152681385, -6.065880060195923],
+				  ['<h2>La Montre</h2><h5>6-70 Main St, Bray, Wicklow</h5><h5>Opening-Hours:<br> 9am - 6pm</h5>', 53.20190048490159, -6.110485196113586]
+				];
+				
+				// Setup the different icons and shadows
+				var iconURLPrefix = 'http://maps.google.com/mapfiles/ms/icons/';
+				
+				var icons = [
+				  iconURLPrefix + 'red-dot.png',
+				  iconURLPrefix + 'red-dot.png',
+				  iconURLPrefix + 'red-dot.png',
+				  iconURLPrefix + 'red-dot.png',
+				  iconURLPrefix + 'red-dot.png',
+				  iconURLPrefix + 'red-dot.png',      
+				  iconURLPrefix + 'red-dot.png'
+				]
+				var iconsLength = icons.length;
+
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 10,
+				  center: new google.maps.LatLng(-37.92, 151.25),
+				  mapTypeId: google.maps.MapTypeId.ROADMAP,
+				  mapTypeControl: false,
+				  streetViewControl: false,
+				  panControl: false,
+				  zoomControlOptions: {
+					 position: google.maps.ControlPosition.LEFT_BOTTOM
+				  }
+				});
+
+				var infowindow = new google.maps.InfoWindow({
+				  maxWidth: 160
+				});
+
+				var markers = new Array();
+				
+				var iconCounter = 0;
+				
+				// Add the markers and infowindows to the map
+				for (var i = 0; i < locations.length; i++) {  
+				  var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+					map: map,
+					icon: icons[iconCounter]
+				  });
+
+				  markers.push(marker);
+
+				  google.maps.event.addListener(marker, 'click', (function(marker, i) {
+					return function() {
+					  infowindow.setContent(locations[i][0]);
+					  infowindow.open(map, marker);
+					}
+				  })(marker, i));
+				  
+				  iconCounter++;
+				  // We only have a limited number of possible icon colors, so we may have to restart the counter
+				  if(iconCounter >= iconsLength) {
+					iconCounter = 0;
+				  }
+				}
+
+				function autoCenter() {
+				  //  Create a new viewpoint bound
+				  var bounds = new google.maps.LatLngBounds();
+				  //  Go through each...
+				  for (var i = 0; i < markers.length; i++) {  
+							bounds.extend(markers[i].position);
+				  }
+				  //  Fit these bounds to the map
+				  map.fitBounds(bounds);
+				}
+				autoCenter();
+			  </script> 
+		</div>
+						
+			
+            
+			
+			
+            <div id="clear"></div>
+            
+           <div class="footer_bg">
+		   <div class="container_12">
+		   
+            <div id="footertop"class="footer grid_8 prefix_2 suffix_2 alpha omega"> 
+                    <ul>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+                        <li><a class="norm" href="home.html"><span>La Montre</span></a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>				
+					</ul>
+            </div>
+			
+			
+            
+			<div id="footerbottom" class="grid_12 alpha">
+			
+			<div id="copyright" class="grid_8 suffix_1 alpha">
+				<p>La Montre is a trademark of Daniel O'Toole.
+				All other names and logos used on this website are the trademarks of their respective owners,
+				and their use or appearance on this website does not constitute any affiliation, 
+				endorsement or support. Copyright © 2015, Daniel O'Toole. Terms & Conditions.
+				PRIVACY POLICY
+			</div>
+			
+			
+			<div id="media" class="grid_2 prefix_1 omega">
+			
+				<img src="Images/Media/f1.png" style="width:40px; height:40px;">
+				<img src="Images/Media/t.png" style="width:40px; height:40px;">
+				<img src="Images/Media/g.png" style="width:40px; height:40px;">
+
+			
+			</div>
+			
+			</div>
+			
+		</div>
+		</div>
+			
+	
+	
+	</body>
+</html>

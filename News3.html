@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>960 grid 1</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/text.css">
+		<link rel = "stylesheet" href = "css/960.css">
+		<link rel = "stylesheet" href = "css/home.css">
+	</head>
+	<body>
+		<div class="nav_bg"></div>
+		<div class = "container_12">
+			<nav class="grid_12 alpha">
+			
+		<div id="head" class="grid_12">
+				<div id ="header1" class="grid_3 alpha">
+						<h1>La M<span>o</span>ntre</h1>
+					</div>
+				
+				<div class="nav_list grid_9 omega">
+					
+					<ul>
+						<li><a class="norm" href="home.html">Home</a></li>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>
+						<li><a class="norm" href="shops.html">Shops</a></li>
+						<li><a id="login" class="login" href="#">Login</a>
+							<ul>
+							<a>
+								<div id="log" class="grid_3 log">
+									<form action="login" method="post">
+										<div id="box"><input type="text" name="ID" placeholder="ID">
+										<br><br>
+										<input type="password" name="Password" placeholder="Password"></div>
+										<br><br>
+										<input type="button" class="button" value="Login" onclick="login(this.form)"/>
+									</form> 
+								</div>
+							</a>
+							</ul>
+						
+						</li>
+						
+					</ul>
+				</div>
+				</div>
+			</nav>
+			
+			<script language="javascript">
+				function login(form) {
+				if (form.ID.value=="admin") { 
+				if (form.Password.value=="admin") {              
+				location="product.html" 
+				} else {
+				alert("Invalid Password")
+				}
+				} else {  alert("Invalid UserID")
+				}
+				}
+			</script>
+
+			<div id="news" class="grid_12">
+			
+				<div class="grid_8 prefix_2 suffix_2">
+				
+				<h1 align="center">Konstantin Chaykin : Russian Time </h1>
+				
+				<img src="Images/News/news3b.jpg" style="width:620px; height:300px;">
+				
+				<p>
+				The largest country in the world, Russia has 11 time zones - 
+				all of which can be conveniently read on the dial of the Russian Time wristwatch
+				by independent watchmaker Konstantin Chaykin, best known for his spaceship
+				inspired Lunokhod Bulat. Each of the time zones can be read according to 
+				city names representing each time zone, or by a map of Russia.
+
+				<br><br>
+				
+				Central hour and minute hands on the Russian Time wristwatch show local time anywhere in Russia, 
+				while the other 10 time zones can be conveniently read off the displays on the top or bottom half of the dial.
+
+				</p>
+				
+				<img src="Images/News/news3c.jpg" style="width:620px; height:300px;">
+				
+				<p>
+				Chaykin's inspiration for the Russian Time wristwatch was the world time clock at 
+				the Peterhof Palace in Saint Petersburg, 
+				built by Russian clockmaker Ivan Yurin in the 19th century. 
+				It features numerous sub-dials showing the time across the old Russian Empire,
+				including cities and time zones that are no more.
+
+				<br><br>
+				
+				The Russian Time wristwatch is stainless steel and 44mm in diameter.
+				 It's powered by the calibre 01-7, a manually wound movement developed in-house by Chaykin,
+				 who manufactures most of his movements in his own workshop.
+				 His repertoire includes complex calibres like the one that 
+				 powers the Cinema wristwatch that features a miniaturised motion picture projector.
+
+				 <br><br>
+				 
+				The Konstantin Chaykin Russian Time is priced at US$13,750.
+
+				</p>
+				
+				</div>
+			
+			</div>
+			
+			
+				
+				
+			
+            
+           </div>
+			
+            <div id="clear"></div>
+            
+           <div class="footer_bg">
+		   <div class="container_12">
+		   
+            <div id="footertop"class="footer grid_8 prefix_2 suffix_2 alpha omega"> 
+                    <ul>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+                        <li><a class="norm" href="home.html"><span>La Montre</span></a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>				
+					</ul>
+            </div>
+			
+			
+            
+			<div id="footerbottom" class="grid_12 alpha">
+			
+			<div id="copyright" class="grid_8 suffix_1 alpha">
+				<p>La Montre is a trademark of Daniel O'Toole.
+				All other names and logos used on this website are the trademarks of their respective owners,
+				and their use or appearance on this website does not constitute any affiliation, 
+				endorsement or support. Copyright © 2015, Daniel O'Toole. Terms & Conditions.
+				PRIVACY POLICY
+			</div>
+			
+			
+			<div id="media" class="grid_2 prefix_1 omega">
+			
+				<img src="Images/Media/f1.png" style="width:40px; height:40px;">
+				<img src="Images/Media/t.png" style="width:40px; height:40px;">
+				<img src="Images/Media/g.png" style="width:40px; height:40px;">
+
+			
+			</div>
+			
+			</div>
+			
+	</body>
+</html>

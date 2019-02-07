@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>960 grid 1</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/text.css">
+		<link rel = "stylesheet" href = "css/960.css">
+		<link rel = "stylesheet" href = "css/home.css">
+	</head>
+	<body>
+		<div class="nav_bg"></div>
+		<div class = "container_12">
+			<nav class="grid_12 alpha">
+			
+			<div id="head" class="grid_12">
+				<div id ="header1" class="grid_3 alpha">
+						<h1>La M<span>o</span>ntre</h1>
+					</div>
+				
+				<div class="nav_list grid_9 omega">
+					
+					<ul>
+						<li><a class="norm" href="home.html">Home</a></li>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>
+						<li><a class="norm" href="shops.html">Shops</a></li>
+						<li><a id="login" class="login" href="#">Login</a>
+							<ul>
+							<a>
+								<div id="log" class="grid_3 log">
+									<form action="login" method="post">
+										<div id="box"><input type="text" name="ID" placeholder="ID">
+										<br><br>
+										<input type="password" name="Password" placeholder="Password"></div>
+										<br><br>
+										<input type="button" class="button" value="Login" onclick="login(this.form)"/>
+									</form> 
+								</div>
+							</a>
+							</ul>
+						
+						</li>
+						
+					</ul>
+				</div>
+				</div>
+			</nav>
+			
+			<script language="javascript">
+				function login(form) {
+				if (form.ID.value=="admin") { 
+				if (form.Password.value=="admin") {              
+				location="product.html" 
+				} else {
+				alert("Invalid Password")
+				}
+				} else {  alert("Invalid UserID")
+				}
+				}
+			</script>
+
+			
+			<div id="news" class="grid_12">
+			
+				<div class="grid_8 prefix_2 suffix_2">
+				
+				<h1 align="center">Corum Coin Watch 50th Anniversary Edition</h1>
+				
+				<img src="Images/News/news4b.jpg" style="width:620px; height:300px;">
+				
+				<p>
+				Created in 1964 and introduced at Baselworld a year later,
+				the novelty of the Corum Coin Watch was its construction -
+				a coin was sliced in two to form the case of the watch, 
+				with the movement sandwiched in-between. 
+				To mark the 50 years since its introduction,
+				Corum has introduced a pair of limited edition Coin Watches.
+
+
+				<br><br>
+				
+				The 50th anniversary Coin Watches use mint, 
+				uncirculated coins struck in 2014,
+				exactly 50 years later than the coins used in the original Coin Watches that featured coins struck in 1964.
+				Corum has also used vintage coins for its Coin Watches,
+				for instance the enamelled Indian Head watch introduced earlier in 2015.
+
+				</p>
+				
+				<img src="Images/News/news4c.jpg" style="width:620px; height:300px;">
+				
+				<p>
+				The more unusual of the pair is the Coin Watch made from an American Silver Eagle coin.
+				Measuring 43mm in diameter (the coin itself is 40.6mm),
+				it's the largest Coin Watch ever made. 
+				This gives it a size that suits contemporary tastes,
+				in contrast to typically smaller Coin Watches
+				Made from the largest denomination American Gold Eagle coin with a face value of US$50,
+				 the second limited edition is a more traditional 36mm in diameter. 
+				
+
+				<br><br>
+				Both editions have a diamond on top of the crown and are equipped with a self-winding ETA 2892 movement. 
+				The Silver Eagle Coin Watch is water-resistant to 10m, while the Gold Eagle is rated to 30m.
+				Both editions of the Coin Watch 50th Anniversary are limited to 100 pieces each. 
+				They are available individually, or as a set with matching serial numbers.
+
+
+
+				 <br><br>
+				 
+				The Coin Watch Gold Eagle is priced at SFr23,000, while the Silver Eagle is SFr12,400.
+				In Singapore the retail prices are S$33,400 and S$18,000 respectively.
+
+				</p>
+				
+				</div>
+			
+			</div>
+			
+			
+				
+				
+			
+            
+            </div>
+			
+            <div id="clear"></div>
+            
+           <div class="footer_bg">
+		   <div class="container_12">
+		   
+            <div id="footertop"class="footer grid_8 prefix_2 suffix_2 alpha omega"> 
+                    <ul>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+                        <li><a class="norm" href="home.html"><span>La Montre</span></a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>				
+					</ul>
+            </div>
+			
+			
+            
+			<div id="footerbottom" class="grid_12 alpha">
+			
+			<div id="copyright" class="grid_8 suffix_1 alpha">
+				<p>La Montre is a trademark of Daniel O'Toole.
+				All other names and logos used on this website are the trademarks of their respective owners,
+				and their use or appearance on this website does not constitute any affiliation, 
+				endorsement or support. Copyright © 2015, Daniel O'Toole. Terms & Conditions.
+				PRIVACY POLICY
+			</div>
+			
+			
+			<div id="media" class="grid_2 prefix_1 omega">
+			
+				<img src="Images/Media/f1.png" style="width:40px; height:40px;">
+				<img src="Images/Media/t.png" style="width:40px; height:40px;">
+				<img src="Images/Media/g.png" style="width:40px; height:40px;">
+
+			
+			</div>
+			
+			</div>
+				
+			
+	</body>
+</html>

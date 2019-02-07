@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>960 grid 1</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/text.css">
+		<link rel = "stylesheet" href = "css/960.css">
+		<link rel = "stylesheet" href = "css/home.css">
+	</head>
+	<body>
+		<div class="nav_bg"></div>
+		<div class = "container_12">
+			<nav class="grid_12 alpha">
+			
+			<div id="head" class="grid_12">
+				<div id ="header1" class="grid_3 alpha">
+						<h1>La M<span>o</span>ntre</h1>
+					</div>
+				
+				<div class="nav_list grid_9 omega">
+					
+					<ul>
+						<li><a class="norm" href="home.html">Home</a></li>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>
+						<li><a class="norm" href="shops.html">Shops</a></li>
+						<li><a id="login" class="login" href="#">Login</a>
+							<ul>
+							<a>
+								<div id="log" class="grid_3 log">
+									<form action="login" method="post">
+										<div id="box"><input type="text" name="ID" placeholder="ID">
+										<br><br>
+										<input type="password" name="Password" placeholder="Password"></div>
+										<br><br>
+										<input type="button" class="button" value="Login" onclick="login(this.form)"/>
+									</form> 
+								</div>
+							</a>
+							</ul>
+						
+						</li>
+						
+					</ul>
+				</div>
+				</div>
+			</nav>
+			
+			<script language="javascript">
+				function login(form) {
+				if (form.ID.value=="admin") { 
+				if (form.Password.value=="admin") {              
+				location="product.html" 
+				} else {
+				alert("Invalid Password")
+				}
+				} else {  alert("Invalid UserID")
+				}
+				}
+			</script>
+
+			
+			<div id="news" class="grid_12">
+			
+				<div class="grid_8 prefix_2 suffix_2">
+				
+				<h1 align="center">HYT Skull Maori Watch</h1>
+				
+				<img src="Images/News/news1b.jpg" style="width:620px; height:400px;">
+				
+				<p>
+				In January this year, HYT launched the Skull series that bring the design and
+				engineering capabilities of the company to a new level.
+				Despite dispensing the minute indicator which was available in their previous models, 
+				the design specification now requires a thin capillary tube which carries the 
+				liquid to follow the shape of the skull on the dial instead of on a circular track.
+				As the liquid is no longer moving on a consistent path but on a track that has corners 
+				and turns, the ability to control the movement to coincide with the hour markers around the dial is a daunting task.
+				Nevertheless, 
+				this is something that HYT was able to achieve quite spectacularly.
+				
+				
+				<br><br>
+				
+				
+				The Skull Maori is the fourth core group in the series (there was the Green Skull,
+				the Red Skull and the precious jewel versions).
+				What is distinctive is the use of traditional hand engraving of customary Maori tattoos.
+				Even the Arabic hour markers use a font reminiscence of the style of engraving. 
+				The engraving does not stop there but continues on to the tan leather band strap.
+				</p>
+				
+				<img src="Images/News/news1c.jpg" style="width:620px; height:300px;">
+				
+				<p>
+				Some key designs features worth mentioning are the bellows and
+				the methods HYT use to help indicate the seconds and power remaining in the watch.
+				The bellows that are visible through the jaw of the skull is the mechanism that
+				causes the fluid to move by the continuous act of expansion and contraction.
+				The right eye indicates the power reserve of the watch. 
+				The eye gradually darkens as the piece nears the end of its 65 hours of power.
+				The left eye hides a barely visible seconds dial which rotates continuously.
+
+				<br><br>
+				
+				From a dimension perspective, this is a big watch. 
+				The casing is 51 mm case wide with a single assembly push-button of the crown, 
+				which adjusts the time, located at the North-East corner of the watch.
+				 Coupled with a thickness of 17.9 mm, this watch definitely has wrist presence.
+				 The casing is made out of red gold and
+				 titanium while the pin buckle is made out of titanium.
+				 The dial is protected by a sapphire crystal and 
+				 the whole casing is water pressure rated to 5 ATM or 165 feet.
+
+				</p>
+				
+				</div>
+			
+			</div>
+			
+			
+				
+				
+			
+            </div>
+			
+            <div id="clear"></div>
+            
+           <div class="footer_bg">
+		   <div class="container_12">
+		   
+            <div id="footertop"class="footer grid_8 prefix_2 suffix_2 alpha omega"> 
+                    <ul>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+                        <li><a class="norm" href="home.html"><span>La Montre</span></a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>				
+					</ul>
+            </div>
+			
+			
+            
+			<div id="footerbottom" class="grid_12 alpha">
+			
+			<div id="copyright" class="grid_8 suffix_1 alpha">
+				<p>La Montre is a trademark of Daniel O'Toole.
+				All other names and logos used on this website are the trademarks of their respective owners,
+				and their use or appearance on this website does not constitute any affiliation, 
+				endorsement or support. Copyright © 2015, Daniel O'Toole. Terms & Conditions.
+				PRIVACY POLICY
+			</div>
+			
+			
+			<div id="media" class="grid_2 prefix_1 omega">
+			
+				<img src="Images/Media/f1.png" style="width:40px; height:40px;">
+				<img src="Images/Media/t.png" style="width:40px; height:40px;">
+				<img src="Images/Media/g.png" style="width:40px; height:40px;">
+
+			
+			</div>
+			
+			</div>
+			
+				
+			
+	</body>
+</html>

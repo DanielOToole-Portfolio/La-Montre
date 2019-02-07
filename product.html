@@ -1,0 +1,215 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>960 grid 1</title>
+		<link rel = "stylesheet" href = "css/reset.css">
+		<link rel = "stylesheet" href = "css/text.css">
+		<link rel = "stylesheet" href = "css/960.css">
+		<link rel = "stylesheet" href = "css/admin.css">
+	</head>
+	<body>
+		<div class="nav_bg"></div>
+		<div id="container" class = "container_12">
+			<nav class="grid_12 alpha">
+			
+			<div id="head" class="grid_12">
+				<div id ="header1" class="grid_3 alpha">
+						<h1>La M<span>o</span>ntre</h1>
+					</div>
+				
+				<div class="nav_list grid_9 omega">
+					
+				<ul>
+						<li><a class="norm" href="product.html">Products</a></li>
+						<li><a class="norm" href="category.html">Categories</a></li>
+						<li><a class="norm" href="shopdetails.html">Shop Details</a></li>
+						<li><a class="norm"  href="home.html">Logout</a>
+							
+						
+						</li>
+						
+					</ul>
+				</div>
+				</div>
+			</nav>
+			
+			
+			<div id="clear"></div>
+			
+			<div id="tabs" class="grid_10 prefix_1 prefix_1">
+			
+			<h1 align="center">Product Database</h1>
+			
+			<div class="tabs">
+				
+				  
+				   <input type="radio" name="tabs" id="tab1" checked >
+				   <label for="tab1">
+					   <i class="fa fa-html5"></i><span>Add Product</span>
+				   </label>
+				 
+				  
+				   <input type="radio" name="tabs" id="tab2">
+				   <label for="tab2">
+					   <i class="fa fa-css3"></i><span>Update Product</span>
+				   </label>
+				 
+				   
+				   <input type="radio" name="tabs" id="tab3">
+				   <label for="tab3">
+					   <i class="fa fa-code"></i><span>Delete Product</span>
+				   </label>
+				 
+				   <div id="tab-content1" class="tab-content">
+					  <h3></h3>
+					  
+					  <p><form action="product.html" method="get">
+					  <div id="nam">Product name: <input type="text" name="pname"></div><br><br>
+					  <div id="id">Product ID: <input type="text" name="id"></div><br><br>
+					  Product Description: <input type="text" name="lname"><br><br>
+					  <div class="pri">Cost Price: <input type="text" name="cp"></div><br><br>
+					  <div class="sale">Sale Price: <input type="text" name="sp"></div><br><br>
+					  <div id="sq">Stock Quantity: <input type="text" name="sq"></div><br><br>
+					  Select Category: <input type="Checkbox" name="lname">Mens<input type="checkbox" name="lname">Womens<br><br>
+					  Upload Image: <input type="file" name="file"><br><br>
+
+					  <input type="submit" value="Add Product" onclick="sure(this.form)">
+					  <script language="javascript">
+				function sure(form){
+               var retVal = confirm("Are you sure? This Product will be added");
+               if( retVal == true ){
+                  document.write ("Product Added");
+                  return true;
+               }
+               else{
+                  document.write ("Product not Added");
+                  return false;
+               }
+            }
+			</script>
+					</p>
+				   </div>
+				   
+				   <div id="tab-content2" class="tab-content">
+					  <h3></h3>
+					  <p>
+					  Search Product ID: <input type="text" name="search"/><input type="submit" value="Search"><br><br>
+					   <p><form action="product.html" method="get">
+					  <div id="nam">Product name: <input type="text" name="pname"></div><br><br>
+					  <div id="id">Product ID: <input type="text" name="id"></div><br><br>
+					  Product Description: <input type="text" name="lname"><br><br>
+					  <div class="pri">Cost Price: <input type="text" name="cp"></div><br><br>
+					  <div class="sale">Sale Price: <input type="text" name="sp"></div><br><br>
+					  <div id="sq">Stock Quantity: <input type="text" name="sq"></div><br><br>
+					  Select Category: <input type="Checkbox" name="lname">Mens<input type="checkbox" name="lname">Womens<br><br>
+					  Upload Image: <input type="file" name="file"><br><br>
+
+					  <input type="submit" value="Update Product" onclick="sure(this.form)">
+					  </p>
+				   </div> 
+				   
+				   <div id="tab-content3" class="tab-content">
+					  <h3></h3>
+					  <p>
+						Search Product: <input type="text" name="search"/><input type="submit" value="Search"/><br><br>
+						Mens:<form name="form">
+					<select name="Products" id="Products">
+					<option value="Products">------- Products -------</option>
+					<option value="">Nixon 48-20 Chrono P Grand</option>
+					<option value="">Nixon Don II Blue Sunray</option>
+					<option value="">Diesel DZ7334</option>
+					<option value="">Vestal ZR3021 ZR3</option>
+					<option value="">Vestal OBCS006 USS Observer</option>
+					<option value="">Vestal ZR3</option>
+					<option value="">Tendence Carbon Fiber</option>
+					<option value="">Diesel Double Down</option>
+					</select>
+						Womens:<form name="form">
+					<select name="Products" id="Products">
+					<option value="Products">------- Products -------</option>
+					<option value="">Nixon Corporal SS Grand Prix</option>
+					<option value="">Nixon 42-20 </option>
+					<option value="">AARK Shell</option>
+					<option value="">Diesel DZ7317</option>
+					<option value="">Fossil Townsman</option>
+					<option value="">M&Co. Onomatopoeia</option>
+					<option value="">Nixon Camden</option>
+					<option value="">Nixon Time Teller</option>
+					</select><br><br><br>
+					
+					<input type="submit" value="Delete Product" onclick="sure2(this.form)"/>
+					<script language="javascript">
+				function sure2(form){
+               var retVal = confirm("Are you sure? This Product will be permentally deleted");
+               if( retVal == true ){
+                  document.write ("Product Deleted");
+                  return true;
+               }
+               else{
+                  document.write ("Product not Deleted");
+                  return false;
+               }
+            }
+			</script>
+						
+					  </p>
+				   </div> 
+				</div>
+			
+				
+				</div>
+						
+			</div>
+			
+            <div id="clear"></div>
+            
+           <div class="footer_bg">
+		   <div class="container_12">
+		   
+            <div id="footertop"class="footer grid_8 prefix_2 suffix_2 alpha omega"> 
+                    <ul>
+						<li><a class="norm" href="MenSelection.html">Mens</a></li>
+                        <li><a class="norm" href="home.html"><span>La Montre</span></a></li>
+						<li><a class="norm" href="WomenSelection.html">Womens</a></li>				
+					</ul>
+            </div>
+			
+			
+            
+			<div id="footerbottom" class="grid_12 alpha">
+			
+			<div id="copyright" class="grid_8 suffix_1 alpha">
+				<p>La Montre is a trademark of Daniel O'Toole.
+				All other names and logos used on this website are the trademarks of their respective owners,
+				and their use or appearance on this website does not constitute any affiliation, 
+				endorsement or support. Copyright © 2015, Daniel O'Toole. Terms & Conditions.
+				PRIVACY POLICY
+			</div>
+			
+			
+			<div id="media" class="grid_2 prefix_1 omega">
+			
+				<img src="Images/Media/f1.png" style="width:40px; height:40px;">
+				<img src="Images/Media/t.png" style="width:40px; height:40px;">
+				<img src="Images/Media/g.png" style="width:40px; height:40px;">
+
+			
+			</div>
+			
+			</div>
+				
+			
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
